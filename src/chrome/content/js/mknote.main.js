@@ -105,7 +105,7 @@
             for(var i = 0, img, l = imgs.length, src; i < l; i++){
                 img = imgs[i];
                 src = img.src;
-                if(!isToSave(src)) continue;
+                //if(!isToSave(src)) continue;
                 if(filteredImg[src]) continue;
                 filteredImg[src] = 1;
                 filteredImgTitles.push(img.title || img.alt || '');

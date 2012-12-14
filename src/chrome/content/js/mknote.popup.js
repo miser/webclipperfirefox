@@ -448,6 +448,12 @@
                     }
                     styleObj[cssProperty] = cssValue;
                 }
+		if(/^(img)$/.test(nodeTagName)){
+                    var imgSrc = $(cloneNode[0]).attr('src');
+                    if(!/^http(s)?:\/\//.test(imgSrc)){
+                        $(cloneNode[0]).attr('src', window.content.location.protocol + '//'+ window.content.location.host  + imgSrc);
+                    }
+                }
                 cloneNode.css(styleObj);
                 self.removeAttrs(cloneNode);
 		var div = $('<div>', content.document).append(cloneNode);

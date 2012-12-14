@@ -5,7 +5,7 @@ extension_name := mknotewebclipper
 extension_uuid := webclipper@mknote.com
 
 # The name of the profile dir where the extension can be installed.
-profile_dir := v6tce51h.huntbao
+profile_dir := 6dzad8of.def
 
 # The zip application to be used.
 ZIP := zip
